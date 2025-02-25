@@ -49,5 +49,10 @@ def findNumber(numbers):
 
 
 
-if name == 'main': 
-  n = int(input().strip())
+if __name__ == '__main__':
+    # First input: number of digits in the list (not used directly in the code, but can be used for validation)
+    n = int(input().strip())
+    # Second input: list of digits separated by spaces
+    numbers = list(map(int, input().split()))
+    result = findNumber(numbers)
+    print(result)
